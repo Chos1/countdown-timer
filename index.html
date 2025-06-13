@@ -5,61 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>타이머</title>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #fceae6;
-      font-family: 'Pretendard Variable', sans-serif;
-      text-align: center;
-      padding: 40px 20px;
-      margin: 0;
-    }
+<style>
+  body {
+    background-color: #fceae6;
+    font-family: 'Pretendard Variable', sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+    overflow-x: hidden; /* 좌우 스크롤 방지 */
+  }
 
-    .title {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
+  .timer {
+    display: flex;
+    gap: 4px;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-    .stock {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
+  .timer div {
+    background-color: #f0a085;
+    padding: 12px;
+    min-width: 32px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+  }
 
+  .colon {
+    padding: 0 4px;
+    font-size: 32px;
+    color: #000;
+  }
+
+  .title, .stock, .note, .notice {
+    max-width: 90vw;
+    word-break: keep-all;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .stock {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .notice {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  /* 📱 반응형 보완 */
+  @media (max-width: 480px) {
     .timer {
-      display: inline-flex;
-      gap: 4px;
-      font-size: 32px;
-      font-weight: bold;
-      justify-content: center;
-      align-items: center;
+      font-size: 24px;
     }
-
     .timer div {
-      background-color: #f0a085;
-      padding: 10px 12px;
-      min-width: 32px;
-      border-radius: 4px;
-      color: #fff;
+      padding: 10px;
+      min-width: 28px;
     }
-
     .colon {
-      padding: 0 4px;
-      font-size: 32px;
-      color: #000;
+      font-size: 24px;
     }
-
-    .note {
-      font-size: 12px;
-      color: #333;
-      margin-top: 20px;
+    .title {
+      font-size: 18px;
+    }
+    .stock {
+      font-size: 14px;
     }
     .notice {
-      font-size: 16px;
-      color: #333;
-      margin-top: 20px;
+      font-size: 11px;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
 
@@ -78,14 +104,7 @@
   </div>
 
   <script>
-      if (window.self === window.top) {
-    // iframe이 아닌, 직접 방문한 경우
-    document.body.innerHTML = "<div style='font-family:Pretendard; font-size:18px; padding:40px; text-align:center;'>⛔ 이 페이지는 직접 접근할 수 없습니다.<br>지정된 경로로만 표시됩니다.</div>";
-    document.body.style.background = "#fceae6";
-  }
-    if (window.self === window.top) {
-    window.location.replace("https://chos1.github.io/403");
-  }
+
     function updateTimer() {
       const now = new Date();
       const totalSeconds = 10 * 60 * 60; // 10시간 = 36000초
@@ -108,7 +127,7 @@
     setInterval(updateTimer, 1000);
     updateTimer();
 
-  </script>
+  </script> 
 
 </body>
 </html>
