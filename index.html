@@ -23,8 +23,8 @@ body {
 
 .timer {
   display: flex;
-  gap: 4px;
-  font-size: clamp(24px, 8vw, 48px); /* 👈 최대 48px로 확장 */
+  gap: 6px;
+  font-size: clamp(28px, 10vw, 64px); /* 최대 64px */
   font-weight: bold;
   justify-content: center;
   align-items: center;
@@ -33,40 +33,35 @@ body {
 
 .timer div {
   background-color: #f0a085;
-  padding: clamp(10px, 3vw, 16px);   /* 👈 최대 패딩도 확대 */
-  min-width: clamp(28px, 8vw, 48px); /* 👈 타이머 박스도 더 큼 */
+  padding: clamp(12px, 3vw, 24px); /* 최대 24px 패딩 */
+  min-width: clamp(32px, 10vw, 64px); /* 최대 64px 박스 */
   text-align: center;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #fff;
 }
 
 .colon {
-  font-size: clamp(24px, 8vw, 48px); /* 👈 콜론도 같이 확대 */
-  padding: 0 clamp(4px, 2vw, 8px);
+  font-size: clamp(28px, 10vw, 64px);
+  padding: 0 clamp(4px, 2vw, 10px);
 }
 
-  .title, .stock, .note, .notice {
-    max-width: 90vw;
-    word-break: keep-all;
-  }
+.title {
+  font-size: clamp(20px, 5vw, 36px); /* 최대 36px */
+  font-weight: 700;
+  margin-bottom: 16px;
+}
 
-  .title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
+.stock {
+  font-size: clamp(16px, 4vw, 28px); /* 최대 28px */
+  font-weight: 600;
+  margin-bottom: 24px;
+}
 
-  .stock {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-
-  .notice {
-    font-size: 12px;
-    color: #333;
-    margin-top: 20px;
-  }
+.notice {
+  font-size: clamp(12px, 3vw, 20px); /* 최대 20px */
+  color: #333;
+  margin-top: 24px;
+}
 
   /* 📱 반응형 보완 */
   @media (max-width: 480px) {
