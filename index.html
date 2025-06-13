@@ -24,23 +24,25 @@ body {
 .timer {
   display: flex;
   gap: 4px;
-  font-size: clamp(20px, 6vw, 32px); /* 반응형 폰트 사이즈 */
+  font-size: clamp(24px, 8vw, 48px); /* 👈 최대 48px로 확장 */
   font-weight: bold;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
 }
+
 .timer div {
   background-color: #f0a085;
-  padding: clamp(8px, 2vw, 12px); /* 반응형 패딩 */
-  min-width: clamp(24px, 6vw, 32px); /* 반응형 박스 크기 */
+  padding: clamp(10px, 3vw, 16px);   /* 👈 최대 패딩도 확대 */
+  min-width: clamp(28px, 8vw, 48px); /* 👈 타이머 박스도 더 큼 */
   text-align: center;
   border-radius: 4px;
   color: #fff;
 }
+
 .colon {
-  font-size: clamp(20px, 6vw, 32px);
-  padding: 0 clamp(2px, 1vw, 4px);
+  font-size: clamp(24px, 8vw, 48px); /* 👈 콜론도 같이 확대 */
+  padding: 0 clamp(4px, 2vw, 8px);
 }
 
   .title, .stock, .note, .notice {
