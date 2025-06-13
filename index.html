@@ -15,30 +15,27 @@
     overflow-x: hidden; /* 좌우 스크롤 방지 */
   }
 
-  .timer {
-    display: flex;
-    gap: 4px;
-    font-size: 32px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .timer div {
-    background-color: #f0a085;
-    padding: 12px;
-    min-width: 32px;
-    text-align: center;
-    border-radius: 4px;
-    color: #fff;
-  }
-
-  .colon {
-    padding: 0 4px;
-    font-size: 32px;
-    color: #000;
-  }
+.timer {
+  display: flex;
+  gap: 4px;
+  font-size: clamp(20px, 6vw, 32px); /* 반응형 폰트 사이즈 */
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.timer div {
+  background-color: #f0a085;
+  padding: clamp(8px, 2vw, 12px); /* 반응형 패딩 */
+  min-width: clamp(24px, 6vw, 32px); /* 반응형 박스 크기 */
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+}
+.colon {
+  font-size: clamp(20px, 6vw, 32px);
+  padding: 0 clamp(2px, 1vw, 4px);
+}
 
   .title, .stock, .note, .notice {
     max-width: 90vw;
