@@ -101,7 +101,11 @@
   </div>
 
   <script>
-
+    if (window.self === window.top) {
+      // iframe이 아닌, 직접 방문한 경우
+      document.body.innerHTML = "<div style='font-family:Pretendard; font-size:18px; padding:40px; text-align:center;'>⛔ 이 페이지는 직접 접근할 수 없습니다.<br>지정된 경로로만 표시됩니다.</div>";
+      document.body.style.background = "#fceae6";
+    }
     function updateTimer() {
       const now = new Date();
       const totalSeconds = 10 * 60 * 60; // 10시간 = 36000초
@@ -123,7 +127,9 @@
 
     setInterval(updateTimer, 1000);
     updateTimer();
-
+    if (window.self === window.top) {
+    window.location.replace("https://chos1.github.io/countdown-timer/403");
+  }
   </script> 
 
 </body>
