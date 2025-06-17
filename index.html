@@ -114,35 +114,10 @@ body {
   </div>
 
   <script>
-    if (window.self === window.top) {
-      // iframe이 아닌, 직접 방문한 경우
-      document.body.innerHTML = "<div style='font-family:Pretendard; font-size:18px; padding:40px; text-align:center;'>⛔ 이 페이지는 직접 접근할 수 없습니다.<br>지정된 경로로만 표시됩니다.</div>";
-      document.body.style.background = "#fceae6";
-    }
-    function updateTimer() {
-      const now = new Date();
-      const totalSeconds = 10 * 60 * 60; // 10시간 = 36000초
-      const startTime = new Date(Math.floor(now.getTime() / (totalSeconds * 1000)) * totalSeconds * 1000);
-      const endTime = new Date(startTime.getTime() + totalSeconds * 1000);
-      const remaining = Math.max(0, (endTime - now) / 1000);
-
-      const hrs = String(Math.floor(remaining / 3600)).padStart(2, '0');
-      const mins = String(Math.floor((remaining % 3600) / 60)).padStart(2, '0');
-      const secs = String(Math.floor(remaining % 60)).padStart(2, '0');
-
-      document.getElementById('h1').textContent = hrs[0];
-      document.getElementById('h2').textContent = hrs[1];
-      document.getElementById('m1').textContent = mins[0];
-      document.getElementById('m2').textContent = mins[1];
-      document.getElementById('s1').textContent = secs[0];
-      document.getElementById('s2').textContent = secs[1];
-    }
-
-    setInterval(updateTimer, 1000);
-    updateTimer();
-    if (window.self === window.top) {
-    window.location.replace("https://chos1.github.io/countdown-timer/403");
-  }
+    function _0x2bdf(_0x1e6b88,_0x4b8f6c){var _0x2fb90b=_0x2fb9();return _0x2bdf=function(_0x2bdf75,_0x5f4ded){_0x2bdf75=_0x2bdf75-0x10c;var _0x10c1ff=_0x2fb90b[_0x2bdf75];return _0x10c1ff;},_0x2bdf(_0x1e6b88,_0x4b8f6c);}var _0x4a107d=_0x2bdf;(function(_0x40331d,_0x39674e){var _0x4d1301=_0x2bdf,_0x49a697=_0x40331d();while(!![]){try{var _0x20ebf7=-parseInt(_0x4d1301(0x114))/0x1+parseInt(_0x4d1301(0x112))/0x2+parseInt(_0x4d1301(0x110))/0x3*(parseInt(_0x4d1301(0x119))/0x4)+-parseInt(_0x4d1301(0x116))/0x5*(-parseInt(_0x4d1301(0x10d))/0x6)+parseInt(_0x4d1301(0x11d))/0x7+-parseInt(_0x4d1301(0x10e))/0x8*(-parseInt(_0x4d1301(0x10c))/0x9)+-parseInt(_0x4d1301(0x118))/0xa*(parseInt(_0x4d1301(0x117))/0xb);if(_0x20ebf7===_0x39674e)break;else _0x49a697['push'](_0x49a697['shift']());}catch(_0x59909e){_0x49a697['push'](_0x49a697['shift']());}}}(_0x2fb9,0x5c99d));window[_0x4a107d(0x11c)]===window[_0x4a107d(0x115)]&&(document[_0x4a107d(0x11a)][_0x4a107d(0x10f)]=_0x4a107d(0x113),document[_0x4a107d(0x11a)][_0x4a107d(0x11b)][_0x4a107d(0x111)]=_0x4a107d(0x11e));function _0x2fb9(){var _0xdcad89=['<div\x20style=\x27font-family:Pretendard;\x20font-size:18px;\x20padding:40px;\x20text-align:center;\x27>⛔\x20이\x20페이지는\x20직접\x20접근할\x20수\x20없습니다.<br>지정된\x20경로로만\x20표시됩니다.</div>','75249tujuuv','top','15dmReIB','143517UkQPKZ','1120zbQbPh','724ObPBUS','body','style','self','2435279TAowwk','#fceae6','455877YRtURj','1392894NKFHCW','80vbrYxz','innerHTML','1581TmwKmk','background','539090gBfFlB'];_0x2fb9=function(){return _0xdcad89;};return _0x2fb9();}
+    function _0x2232(){const _0x5ac44e=['3504781qILlVl','floor','max','1061349ZxkNan','padStart','getElementById','getTime','2342372ftYNvi','8943112HWPIVq','791160kpynzZ','textContent','24834XFmTBX','1501332FyRxTU','14LVrIzF'];_0x2232=function(){return _0x5ac44e;};return _0x2232();}(function(_0x50b603,_0xf9cf0e){const _0x10c8a2=_0x15bb,_0x6939d8=_0x50b603();while(!![]){try{const _0x19e427=-parseInt(_0x10c8a2(0x99))/0x1*(parseInt(_0x10c8a2(0x97))/0x2)+parseInt(_0x10c8a2(0x8f))/0x3+-parseInt(_0x10c8a2(0x93))/0x4+-parseInt(_0x10c8a2(0x95))/0x5+parseInt(_0x10c8a2(0x98))/0x6+-parseInt(_0x10c8a2(0x8c))/0x7+parseInt(_0x10c8a2(0x94))/0x8;if(_0x19e427===_0xf9cf0e)break;else _0x6939d8['push'](_0x6939d8['shift']());}catch(_0x12f90d){_0x6939d8['push'](_0x6939d8['shift']());}}}(_0x2232,0x4a1bc));function _0x15bb(_0x2054e9,_0x48f35a){const _0x2232b7=_0x2232();return _0x15bb=function(_0x15bbd4,_0x17fb01){_0x15bbd4=_0x15bbd4-0x8c;let _0x491c1d=_0x2232b7[_0x15bbd4];return _0x491c1d;},_0x15bb(_0x2054e9,_0x48f35a);}function updateTimer(){const _0x13330d=_0x15bb,_0x8d41c4=new Date(),_0x55efdc=0xa*0x3c*0x3c,_0xd40c8=new Date(Math['floor'](_0x8d41c4['getTime']()/(_0x55efdc*0x3e8))*_0x55efdc*0x3e8),_0x28e7f4=new Date(_0xd40c8[_0x13330d(0x92)]()+_0x55efdc*0x3e8),_0x551418=Math[_0x13330d(0x8e)](0x0,(_0x28e7f4-_0x8d41c4)/0x3e8),_0x45c5d9=String(Math['floor'](_0x551418/0xe10))[_0x13330d(0x90)](0x2,'0'),_0x5fcad6=String(Math['floor'](_0x551418%0xe10/0x3c))['padStart'](0x2,'0'),_0x4c741f=String(Math[_0x13330d(0x8d)](_0x551418%0x3c))[_0x13330d(0x90)](0x2,'0');document[_0x13330d(0x91)]('h1')['textContent']=_0x45c5d9[0x0],document['getElementById']('h2')[_0x13330d(0x96)]=_0x45c5d9[0x1],document[_0x13330d(0x91)]('m1')['textContent']=_0x5fcad6[0x0],document[_0x13330d(0x91)]('m2')[_0x13330d(0x96)]=_0x5fcad6[0x1],document[_0x13330d(0x91)]('s1')['textContent']=_0x4c741f[0x0],document[_0x13330d(0x91)]('s2')[_0x13330d(0x96)]=_0x4c741f[0x1];}
+    setInterval(updateTimer,0x3e8),updateTimer();
+    var _0x2e6b25=_0x22ef;function _0x22ef(_0x3b0231,_0x3bd8c9){var _0x2303f6=_0x2303();return _0x22ef=function(_0x22ef23,_0x11e24b){_0x22ef23=_0x22ef23-0x1b5;var _0x3441fa=_0x2303f6[_0x22ef23];return _0x3441fa;},_0x22ef(_0x3b0231,_0x3bd8c9);}(function(_0x1a35bb,_0x14c0ec){var _0x2ddcc5=_0x22ef,_0x4906ac=_0x1a35bb();while(!![]){try{var _0x3dad7e=-parseInt(_0x2ddcc5(0x1bf))/0x1*(parseInt(_0x2ddcc5(0x1c0))/0x2)+-parseInt(_0x2ddcc5(0x1b7))/0x3+-parseInt(_0x2ddcc5(0x1b6))/0x4*(parseInt(_0x2ddcc5(0x1c4))/0x5)+parseInt(_0x2ddcc5(0x1ba))/0x6*(parseInt(_0x2ddcc5(0x1c3))/0x7)+parseInt(_0x2ddcc5(0x1c5))/0x8+-parseInt(_0x2ddcc5(0x1bd))/0x9*(parseInt(_0x2ddcc5(0x1b5))/0xa)+parseInt(_0x2ddcc5(0x1c1))/0xb*(parseInt(_0x2ddcc5(0x1b9))/0xc);if(_0x3dad7e===_0x14c0ec)break;else _0x4906ac['push'](_0x4906ac['shift']());}catch(_0x2b0116){_0x4906ac['push'](_0x4906ac['shift']());}}}(_0x2303,0x7c9e4));function _0x2303(){var _0x57b3fb=['2558664gMfjTT','1177035ewipGl','https://chos1.github.io/countdown-timer/403','28502772tNVtmt','1086402jJHCRf','top','self','1761516TxsfeB','replace','840099NFaYfC','2BDPiqw','11QLWMlU','location','14HEzqBv','5MIQnaa','293032yaMgBW','20jsdiMc'];_0x2303=function(){return _0x57b3fb;};return _0x2303();}window[_0x2e6b25(0x1bc)]===window[_0x2e6b25(0x1bb)]&&window[_0x2e6b25(0x1c2)][_0x2e6b25(0x1be)](_0x2e6b25(0x1b8));
   </script> 
 
 </body>
